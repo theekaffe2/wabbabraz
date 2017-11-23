@@ -8,6 +8,12 @@ fi
 curdir=$(pwd)
 dumb=("Amateur" "Ballerina" "Woman.20-29" "Big.Tits.Worship" "Browse By Categories" "Tags")
 
+if [ -f "$curdir/cookies.txt" ]; then
+	echo "Found Cookies.txt"
+	else
+	echo "No cookies found"
+	exit
+fi
 
 curlstuff ()
 {
